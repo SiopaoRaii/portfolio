@@ -73,13 +73,21 @@ a:focus {
   color: #fff;
   background-color: #303030;
   border-color: transparent;
+  border-radius: 10px;
+}
+#btn-primary {
+  color: #fff;
+  background-color: #303030;
+  border-color: transparent;
+  border-radius: 15px;
 }
 .btn-secondary {
   color: #fff;
-  background-color: #5975ec;
+  background-color: #dfa128;
   border-color: transparent;
+  border-radius: 10px;
 }
-.btn-secondary:hover{
+.btn-secondary :hover{
   color: #5975ec;
   background-color: #ffffff;
   border-color: transparent;
@@ -612,16 +620,17 @@ textarea.form-control {
 }
 
 .section {
-  height: 100vh;
-  min-height: 700px;
+  height: auto;
+  min-height: 100vh;
   display: block;
-  /* align-items: center; */
+  align-items: center; 
+  align-content: center;
 }
 
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
-@keyframes backgroundMove {
+ @keyframes backgroundMove {
   0% {
     background-position: 0% 0%;
   }
@@ -631,7 +640,7 @@ textarea.form-control {
   100% {
     background-position: 0% 0%;
   }
-}
+} 
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -645,7 +654,7 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   position: relative;
-  background:url(../img/Headerportfolio2.jpg);
+  background:url(../img/Headerportfolio5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;   /*optional for parallax feel */
@@ -669,7 +678,7 @@ textarea.form-control {
 .header-text h1 {
   color: #fff;
   z-index: 9;
-  font-size: 60px;
+  font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.5;
@@ -685,7 +694,6 @@ textarea.form-control {
   font-size: 15px;
   font-weight: 500;
   font-family: verdana;
-  text-transform: ;
   display: flex;
   justify-content: center;
   margin: 20px 0 20px;
@@ -715,11 +723,13 @@ textarea.form-control {
     font-weight: 500;
     font-family: verdana;
     text-transform: uppercase;
-    margin: 20px 0 20px;
+    margin: 20px 0px 0px 0px;
     letter-spacing: 1px;
-    width:"50vw"; 
+    max-width: 55rem; 
     height:"auto";
   }
+
+  
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#ffffff;border: 1px solid #b636ff; color: #002fff;}
 /*.header-text-area*/
 
@@ -943,7 +953,7 @@ textarea.form-control {
   position:absolute;
   height:100%;
   width:100%;
-  background:#30303093;
+  background:#5974ecd0;
   display:flex;
   align-items:center;
   text-transform: uppercase;
@@ -965,6 +975,8 @@ textarea.form-control {
   color: #fff;
   font-size: 14px;
   text-align: center;
+  font-weight: 600;
+  text-decoration: none;
 }
 .isotope .item:hover .isotope-overlay{
   -webkit-transform:scale(1);
@@ -1055,6 +1067,7 @@ textarea.form-control {
   margin-top: 5px;
   margin-left: 1px;
   border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
 }
 
 .work-section .title h2 {
@@ -1063,7 +1076,103 @@ textarea.form-control {
   margin-bottom: 12px;
 }
 
+
+
+
+
+
+/* My automated sliders START here */
+
+.slider-row {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 20px 0;
+  position: relative;
+}
+
+.slider-track {
+  display: inline-flex;
+  animation: scroll-left 20s linear infinite;
+}
+.slider-track-opposite {
+  display: inline-flex;
+  animation: scroll-right 20s linear infinite;
+}
+
+.slider-row:hover .slider-track {
+  animation-play-state: paused;
+}
+.slider-row:hover .slider-track-opposite {
+  animation-play-state: paused;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: 15vw;
+  height: auto;
+  margin: 0 10px;
+  /* background: #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+ #Ads .slider-item {
+  aspect-ratio: 1 ;
+} 
+#Ads .slider-item img {
+  border-radius: 5px;  
+} 
+#mockup .slider-item {
+  aspect-ratio: 1.2 ;
+} 
+#mockup .slider-item img{  
+  border-radius: 5px;
+} 
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Duplicate the content for seamless looping */
+.slider-track .slider-item-group {
+  display: flex;
+}
+
+.slider-track .slider-item-group:nth-child(2) {
+  margin-left: 20px;
+}
+
+.slider-track-opposite .slider-item-group {
+  display: flex;
+}
+
+.slider-track-opposite .slider-item-group:nth-child(2) {
+  margin-left: 20px;
+}
+/* My automated Sliders End Here */
+
+
+
+
+
 /* <<< Gallery section >>> */
+
 .gallery-slider figure {
 	position: relative;
 	float: left;
@@ -1120,7 +1229,7 @@ textarea.form-control {
 .gallery-slider figure h2 {
 	word-spacing: -0.15em;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 
 .gallery-slider figure h2 span {
@@ -1139,11 +1248,13 @@ textarea.form-control {
 
 .gallery-section {
   background-color: #99ccff;
+  height: auto ;
 }
 
 .gallery-section .title {
-  padding-right: 13px;
-  margin-bottom: 80px;
+  padding: 20px;
+  background-color: #b536ffb2;
+  margin: 20px 0px;
 }
 
 /*---------------*/
@@ -1232,7 +1343,7 @@ figure.effect-julia:hover p {
   .gallery-section .title { margin-bottom: 40px; }
 }
 
-.gallery-section .title h2 { color: #006699; }
+.gallery-section .title h2 { color: #ffffff; }
 .gallery-section .slick-list { margin-bottom: 40px; }
 
 .gallery-section .item {
