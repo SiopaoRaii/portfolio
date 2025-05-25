@@ -715,7 +715,7 @@ textarea.form-control {
 }
 @media (max-width: 425px) {
   .header-text h1{
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .header-text p{
   font-size: 0.5rem;
