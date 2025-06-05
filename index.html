@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> Ryan Luis Pelayo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
+     <!--owl.carousel.css-->
+     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4CBQG59T8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4CBQG59T8');
+    </script>
+<script>
+    let zoomLevel = 1;
+  
+    function openLightbox(src) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      zoomLevel = 1;
+      lightboxImg.style.transform = `scale(${zoomLevel})`;
+      lightboxImg.src = src;
+      lightbox.style.display = "flex";
+    }
+  
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+      document.getElementById("lightbox-img").src = "";
+    }
+  
+    function zoomImage(factor) {
+      zoomLevel *= factor;
+      document.getElementById("lightbox-img").style.transform = `scale(${zoomLevel})`;
+    }
+  
+    function resetZoom() {
+      zoomLevel = 1;
+      document.getElementById("lightbox-img").style.transform = `scale(1)`;
+    }
+  </script>
+  <script>
+    function openLightbox(src) {
+    const lb = document.getElementById("lightbox");
+    document.getElementById("lightbox-img").src = src;
+    lb.style.display = "flex";
+    setTimeout(() => lb.classList.add('show'), 10);
+  }
+  
+  function closeLightbox() {
+    const lb = document.getElementById("lightbox");
+    lb.classList.remove('show');
+    setTimeout(() => lb.style.display = "none", 300);
+  }
+  
+
+  </script>
+  
+      
+</head>
+
+<body>
+    <div id="outer">
+        <header class="header order-last" id="tm-header">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse single-page-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcome-hero"><span class="icn"><i class="fas fa-2x fa-user"></i></span><br> Welcome
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-1"><span class="icn"><i class="fab fa-2x fa-battle-net"></i></span><br> Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-2"><span class="icn"><i class="fas fa-2x fa-star"></i></span><br> Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-3"><span class="icn"><i class="far fa-2x fa-images"></i></span><br> Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span><br> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+        
+        <main id="content-box" class="order-first">
+
+
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+                    
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+                            
+                            <marquee direction="left"  behavior="scroll" scrollamount="7">
+							Graphic Designer &nbsp;	•&nbsp;	 Website Designer&nbsp;	•	 &nbsp;Front-End Developer&nbsp;	•	 &nbsp;Shopify Front-End Developer&nbsp;	•	 &nbsp;Adobe Photoshop &nbsp;	•&nbsp;	 Adobe Illustrator&nbsp;	•	 &nbsp;Adobe AfterEffects&nbsp;	•	 &nbsp;Figma&nbsp;	•	 &nbsp;ClipChamp&nbsp;	•	 &nbsp;Canva
+							</marquee>
+							<h1>hi<span>,</span> i am  Ryan  Luis <span>.</span>   </h1>
+                            <p>
+                                As a Website Designer with a Bachelor of Science in Information Systems (graduated with Latin Honors and Civil Service Eligible), I offer a versatile design skill set encompassing web, graphic, video, social media, and print materials. I'm eager to contribute my multidisciplinary expertise to your team and support your creative objectives.
+							</p>
+                            
+                            <marquee direction="right"  behavior="scroll" scrollamount="7">
+                                Adobe Photoshop &nbsp;	•&nbsp;	 Adobe Illustrator&nbsp;	•	 &nbsp;Adobe AfterEffects&nbsp;	•	 &nbsp;Figma&nbsp;	•	 &nbsp;ClipChamp&nbsp;	•	 &nbsp;Canva&nbsp;	•	 &nbsp;Graphic Designer &nbsp;	•&nbsp;	 Website Designer&nbsp;	•	 &nbsp;Front-End Developer&nbsp;	•	 &nbsp;Shopify Front-End Developer
+                            </marquee>
+						</div><!--/.header-text-->
+							<a href="img/PelayoCV.pdf" class="btn btn-secondary" download >Download Resume</a>
+					</div>
+                    <<!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+
+
+
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/SkillsBG.jpg" id="section-1">
+                <div class="container">
+                    <div class="item">
+                        <!-- <div class="bg-blue-transparent logo-fa">  </div> -->
+                        <div class="bg-blue-transparent simple">
+
+<!--skills start -->
+		<section id="skills" class="skills">
+            <div class="skill-content">
+                <div class="section-heading text-center">
+                    <h2>skills</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                With a Bachelor of Science in Information Systems (graduated with Latin Honors and Civil Service Eligible), I bring a versatile design skill set encompassing:
+                            </p>
+                        </div>
+                        <div class="col-md-6 xs-6">
+                            <div class="single-skill-content">
+                                <div class="barWrapper">
+                                    <span class="progressText">adobe photoshop</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                                                  
+                                            </div>
+                                        </div>
+                                        <h3>90%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText">adobe illustrator</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                           <div class="progress-bar" role="progressbar" style="width: 85%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                                                
+                                           </div>
+                                        </div>
+                                        <h3>85%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText"> adobe after effects</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                           <div class="progress-bar" role="progressbar" style="width: 80%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                               
+                                           </div>
+                                        </div>
+                                        <h3>80%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText">Canva | Clipchamp</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                                
+                                           </div>
+                                        </div>
+                                        <h3>95%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 xs-6">
+                            <div class="single-skill-content">
+                                <div class="barWrapper">
+                                    <span class="progressText">html 5 | css 3 </span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                            
+                                            </div>
+                                        </div>
+                                        <h3>90%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText">Shopify | Wordpress</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                                 
+                                            </div>
+                                        </div>
+                                        <h3>85%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText">communication</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 97%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                            
+                                           </div>
+                                        </div>
+                                        <h3>97%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                                <div class="barWrapper">
+                                    <span class="progressText">analytical thinking</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%; background-color: orange; color: magenta; font-weight: bold;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" >
+                                                
+                                           </div>
+                                        </div>
+                                        <h3>90%</h3>	
+                                    </div>
+                                </div><!-- /.barWrapper -->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                I'm eager to contribute my multidisciplinary expertise to your team and support your creative objectives.
+                            </p>
+                        </div>
+                    </div><!-- /.row -->
+                </div>	<!-- /.container -->		
+            </div><!-- /.skill-content-->
+
+    </section><!--/.skills-->
+<!--skills end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+            <section class="work-section section" id="section-2">
+                <div class="container">
+
+                    <div class="title">
+                        <h2><center>Recent Projects</center></h2>
+                    </div>
+                    <div class="row">
+
+  <!-- Row 1 -->
+  <div class="slider-row">
+    <div class="slider-track">
+      <div class="slider-item-group" id="mockup">
+        <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups01.png" data-full="img/portfoliowebsite/webmockups001.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups02.png" data-full="img/portfoliowebsite/webmockups002.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups03.png" data-full="img/portfoliowebsite/webmockups003.jpg" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups04.png" data-full="img/portfoliowebsite/webmockups004.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups05.png" data-full="img/portfoliowebsite/webmockups005.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups06.png" data-full="img/portfoliowebsite/webmockups006.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups07.png" data-full="img/portfoliowebsite/webmockups007.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups08.png" data-full="img/portfoliowebsite/webmockups008.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+      </div>
+      <!-- Duplicate for loop effect -->
+      <div class="slider-item-group">        
+        <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups01.png" data-full="img/portfoliowebsite/webmockups001.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups02.png" data-full="img/portfoliowebsite/webmockups002.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups03.png" data-full="img/portfoliowebsite/webmockups003.jpg" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups04.png" data-full="img/portfoliowebsite/webmockups004.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups05.png" data-full="img/portfoliowebsite/webmockups005.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups06.png" data-full="img/portfoliowebsite/webmockups006.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups07.png" data-full="img/portfoliowebsite/webmockups007.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups08.png" data-full="img/portfoliowebsite/webmockups008.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+      </div>
+    </div>
+  </div>
+  </a>
+  </div>
+
+        <div class="row">
+                    
+
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<!-- <div class="section-heading text-center">
+					<h2>portfolio</h2>
+				</div> -->
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="img/portfolio/p1.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Real Estate Website <br> Password:
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="img/portfolio/p2.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												Shopify Store <br> Password:
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="img/portfolio/p3.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="https://drive.google.com/file/d/1SkGeYV1gku6izZm1CpD2bSH42FSX41lA/view?usp=drive_link">
+												E-Commerce Web Design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="img/portfolio/p4.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												E-Commerce Wordpress Website
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="img/portfolio/p5.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="/https://drive.google.com/file/d/1bvxs6ENvU0X7D7p7WAoe30Np8adv5d-r/view?usp=sharing">
+												See AdobeXD file...
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+         </div>
+
+    <div class="row">
+    <!-- Row 2 -->
+        <div class="slider-row">
+              <div class="slider-track-opposite">
+            
+      <div class="slider-item-group" id="mockup">
+        <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups01.png" data-full="img/portfoliowebsite/webmockups001.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups02.png" data-full="img/portfoliowebsite/webmockups002.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups03.png" data-full="img/portfoliowebsite/webmockups003.jpg" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups04.png" data-full="img/portfoliowebsite/webmockups004.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups05.png" data-full="img/portfoliowebsite/webmockups005.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups06.png" data-full="img/portfoliowebsite/webmockups006.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups07.png" data-full="img/portfoliowebsite/webmockups007.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+          <div class="slider-item">
+            <img src="img/portfoliowebsite/webmockups08.png" data-full="img/portfoliowebsite/webmockups008.png" onclick="openLightbox(this.dataset.full)">
+          </div>
+      </div>
+
+            <!-- Duplicate for loop effect -->
+            <div class="slider-item-group">        
+                <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups01.png" data-full="img/portfoliowebsite/webmockups001.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups02.png" data-full="img/portfoliowebsite/webmockups002.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups03.png" data-full="img/portfoliowebsite/webmockups003.jpg" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups04.png" data-full="img/portfoliowebsite/webmockups004.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups05.png" data-full="img/portfoliowebsite/webmockups005.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups06.png" data-full="img/portfoliowebsite/webmockups006.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups07.png" data-full="img/portfoliowebsite/webmockups007.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+                  <div class="slider-item">
+                    <img src="img/portfoliowebsite/webmockups08.png" data-full="img/portfoliowebsite/webmockups008.png" onclick="openLightbox(this.dataset.full)">
+                  </div>
+            </div>
+          </div>
+        </div>   
+    </div>
+
+                </div>
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview" />
+</div>
+            </section>
+
+            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/SkillsBG02.jpg" id="section-3">
+                <div class="container">
+                    <div class="title text-right">
+                        <h2> <center>Designs</center> </h2>
+                    </div>
+                    <!-- <div class="mx-auto gallery-slider">
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-01.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-02.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-03.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-04.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-05.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-06.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-07.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-08.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/gallery-img-09.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Julia dances in the deep dark</p>
+                                </div>
+                                <a href="#">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div> -->
+
+
+  <!-- Row 1 -->
+  <div class="slider-row">
+    <div class="slider-track">
+      <div class="slider-item-group" id="Ads">
+        <div class="slider-item">
+            <img src="img/Ads/img01.jpg" data-full="img/Ads/img01.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img02.jpg" data-full="img/Ads/img02.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img03.png" data-full="img/Ads/img03.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img04.png" data-full="img/Ads/img04.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img05.png" data-full="img/Ads/img05.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+      </div>
+      <!-- Duplicate for loop effect -->
+      <div class="slider-item-group">        
+        <div class="slider-item">
+            <img src="img/Ads/img01.jpg" data-full="img/Ads/img01.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img02.jpg" data-full="img/Ads/img02.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img03.png" data-full="img/Ads/img03.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img04.png" data-full="img/Ads/img04.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img05.png" data-full="img/Ads/img05.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row 2 -->
+  <div class="slider-row">
+    <div class="slider-track-opposite" style="animation-duration: 30s;">
+      <div class="slider-item-group" id="Logo">
+        <div class="slider-item"><img src="img/Logo/img01.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img02.png"></div>
+        <div class="slider-item"><img src="img/Logo/img03.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img04.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img05.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img06.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img07.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img08.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img09.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img10.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img11.png"></div>
+      </div>
+      <div class="slider-item-group">
+        <div class="slider-item"><img src="img/Logo/img01.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img02.png"></div>
+        <div class="slider-item"><img src="img/Logo/img03.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img04.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img05.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img06.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img07.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img08.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img09.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img10.jpg"></div>
+        <div class="slider-item"><img src="img/Logo/img11.png"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="slider-row">
+    <div class="slider-track" style="animation-duration: 15s;">
+      <div class="slider-item-group">
+        <div class="slider-item">
+            <img src="img/Ads/img06.jpg" data-full="img/Ads/img06.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img07.jpg" data-full="img/Ads/img07.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img08.jpg" data-full="img/Ads/img08.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img09.jpg" data-full="img/Ads/img09.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img10.png" data-full="img/Ads/img10.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+      </div>
+      <div class="slider-item-group">
+        <div class="slider-item">
+            <img src="img/Ads/img06.jpg" data-full="img/Ads/img06.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img07.jpg" data-full="img/Ads/img07.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img08.jpg" data-full="img/Ads/img08.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img09.jpg" data-full="img/Ads/img09.jpg" onclick="openLightbox(this.dataset.full)">
+        </div>
+        <div class="slider-item">
+            <img src="img/Ads/img10.png" data-full="img/Ads/img10.png" onclick="openLightbox(this.dataset.full)">
+        </div>
+      </div>
+    </div>
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview" />
+</div>
+  </div>
+
+
+
+
+                </div>
+            </section>
+
+            <section class="contact-section section" id="section-4">
+                <div class="container">
+                    <div class="title">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4 contact-details">
+                            <div class="tm-contact-item-inner-2">
+                                <p><b>Let’s Create Something Great</b> <br>
+                                    Have a project in mind or just want to say hello? I’d love to hear from you. Fill out the form and I’ll get back to you soon!</p>
+                                <ul class="font-weight-light">
+                                    <li>
+                                        <span class="icn"><i class="fas fa-mobile-alt"></i></span>
+                                        <span class="lbl">Tel:</span> <a href="#">0946 368 2044</a>
+                                    </li>
+                                    <li>
+                                        <span class="icn"><i class="fas fa-at"></i></span>
+                                        <span class="lbl">Email:</span> <a href="#">bunnyryanluis@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <span class="icn"><i class="fas fa-globe-asia"></i></span>
+                                        <span class="lbl">URL:</span> <a href="https://ph.jobstreet.com/profile/ryanluis-pelayo-kq02qZ828z">jobstreet.com/</a>
+                                    </li>
+                                </ul>
+                            </div>                        
+                        </div>
+                        <div class="col-lg-5 col-md-6 mb-4 contact-form">
+                            <div class="form tm-contact-item-inner">
+                            <form id="my-form" action="https://formspree.io/f/mblojoyz" method="POST">
+                                    <div class="form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="textarea form-control" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <button type="submit" id="btn-primary" class="btn btn-primary"  value="Send it"> Send</button>
+                                    </div>
+                                    <p id="my-form-status"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 map">
+                            <!-- Map -->
+                            <div class="map-outer tm-mb-40">
+                                <div class="gmap-canvas">
+                                    <iframe width="100%" height="400" id="gmap-canvas"
+                                        src="https://maps.google.com/maps?q=Av.+L+%Narcissus+St+Caloocan+Metro Manila/@14.7484602,121.0645287,17z17z&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <footer class="footer container container-2">
+                    <div class="row"> 
+                        <p class="col-sm-7">Copyright 2025 designeRY Portfolio.</p>
+                        <!-- <p class="col-sm-5 text-right design">Design: <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a></p> -->
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+    <script>
+         var form = document.getElementById("my-form");
+
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        status.innerHTML = "Thanks for your submission!";
+                        form.reset()
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                            } else {
+                                status.innerHTML = "Oops! There was a problem submitting your form"
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                });
+            }
+            form.addEventListener("submit", handleSubmit)
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+    
+		<!-- progressbar js -->
+		<script src="js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+</body>
+</html>
